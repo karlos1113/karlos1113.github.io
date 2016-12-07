@@ -190,3 +190,7 @@ img.central {
 .smaller-image {
     width: 300px;
   }
+
+  .korean-font{
+    font-family: Nanum gothic;
+  }
