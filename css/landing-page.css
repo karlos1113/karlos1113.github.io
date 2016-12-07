@@ -26,8 +26,8 @@ h6 {
 }
 
 .lead {
-    font-size: 18px;
-    font-weight: 400;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .intro-header {
@@ -192,5 +192,7 @@ img.central {
   }
 
   .korean-font{
+    font-size: 18px;
+    font-weight: 400;
     font-family: Nanum gothic;
   }
