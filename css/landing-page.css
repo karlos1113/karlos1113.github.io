@@ -22,7 +22,7 @@ h6 {
 }
 
 .topnav {
-    font-size: 14px; 
+    font-size: 14px;
 }
 
 .lead {
@@ -186,3 +186,7 @@ img.central {
     margin-top: auto;
     margin-bottom: auto;
 }
+
+.smaller-image {
+    width: 100px;
+  }
