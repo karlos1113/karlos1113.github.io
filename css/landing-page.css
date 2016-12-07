@@ -112,6 +112,11 @@ h6 {
     margin-bottom: 30px;
 }
 
+.section-heading-b {
+    margin-bottom: 20px;
+}
+
+
 .section-heading-spacer {
     float: left;
     width: 200px;
@@ -188,10 +193,12 @@ img.central {
 }
 
 .smaller-image {
-    width: 300px;
+    width: 350px;
   }
 
-  .korean-font{
-    font-family: 'Nanum Brush Script';
+.sub-title{
     font-size: 18px;
-  }
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
