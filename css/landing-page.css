@@ -210,3 +210,7 @@ img.central {
     font-weight: 400;
     margin-bottom: 20px;
 }
+
+.korean_font{
+  font-family: Nanum Gothic;
+}
