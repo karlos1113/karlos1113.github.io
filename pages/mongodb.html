@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Open Source - MongoDB</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="index.html">Home</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="foundation.html">Open-Source Foundation</a>
+                    </li>
+                    <li>
+                        <a href="project.html">Open-Source Project</a>
+                    </li>
+                    <li>
+                        <a href="license.html">License</a>
+                    </li>
+                    <li>
+                        <a href="github.html">Git/Github</a>
+                    </li>
+                    <li>
+                        <a href="github_project.html">Github project</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="row">
+        <!-- Left Menu -->
+        <div class="col-xs-2" id="MainMenu">
+            <div class="list-group left-bar" style="margin-left: 5px;">
+                <a href="#TOP" class="list-group-item active">1. 소개</a>
+                <a href="#install" class="list-group-item list-group-item-action" data-toggle="collapse" id="i">2. 설치법 <i class="fa fa-caret-down"></i></a>
+                <div class="collapse" id="install">
+                    <a href="#i-2-1" class="list-group-item sub-menu">2.1. 설치</a>
+                    <a href="#i-2-2" class="list-group-item sub-menu">2.2. 설치확인</a>
+                </div>
+                <a href="#chars" class="list-group-item list-group-item-action">3. 특징</a>
+            </div>
+        </div>
+
+        <!-- Contents -->
+        <div class="col-xs-10 top-margin" id="contents">
+            <!-- Post Content -->
+            <article>
+                <div class="container">
+                    <h1 style="padding-bottom: 40px;"><b>MongoDB</b></h1>
+                    <div class="my-font">
+                        <h1 class="head-line">1. 소개<sup id="ref-1"><a href="#reference">1)</a></sup></span></h1>
+                        <img src="../img/mongodb.jpg" alt="" border=1 align=left vspace=10 hspace=20 height=210px width=300px>
+                        &nbsp;몽고DB(MongoDB)는 크로스 플랫폼 도큐먼트 지향 데이터베이스 시스템이다. NoSQL 데이터베이스로 분류되는 몽고DB는 JSON과 같은
+                        동적 스키마형 문서들(몽고DB는 이러한 포맷을 BSON이라 부름)을 선호함에 따라 전통적인 테이블 기반 관계형 데이터베이스 구조의 사용을 삼간다.
+                        이로써 특정한 종류의 애플리 케이션을 더 쉽고 빠르게 데이터 통합을 가능케 한다. 아페로 GPL과 아파치 라이선스를 결합하여 공개된 몽고DB는
+                        자유-오픈 소스 소프트웨어다.<br/><br/>
+                        &nbsp;뉴욕시에 기반을 둔 회사인 10gen (현재의 몽고DB)에서 2007년 10월, 계획된 PaaS(서비스로서의 플랫폼) 제품의 구성 요소로 처음 개발하였으며
+                        10gen이 상용 지원 및 기타 서비스를 제공한 2009년에 오픈 소스 개발 모델로 전향하였다. 그 뒤로 몽고DB는 크레이그리스트, 이베이, 포스퀘어, 
+                        소스포지, 뉴욕 타임즈, 구글, 페이스북과 같은 수많은 주요 웹사이트 및 서비스에 백엔드 소프트웨어로 채택되고 있다.
+                        <span id="i-2-1">몽고DB는 가장 유명한 NoSQL 데이터베이스 시스템이다.
+                    </div>
+                    <div class="bottom-divider my-font">
+                        <h1 class="head-line">2. 설치법<sup id="ref-2"><a href="#reference">2)</a></sup></h1>
+                        <h2 style="padding-top: 10px; border-bottom: 1px solid rgba(0, 0, 0, 0.2); width: 600px;">2.1. 설치</h2>
+                        <h3 style="padding-top: 10px;">1. MongoDB 다운로드</h3><br/>
+                        <p>MongoDB 파일을 아래 경로에서 내려 받는다.</p>
+                        <a target="_blank" href="https://www.mongodb.org/download">https://www.mongodb.org/download</a><br/><br/>
+                        <p>홈페이지로 들어가서 스크롤을 내리면 'DOWNLOAD(msi)' 버튼이 있는데 그것을 눌러서 내려받으면 된다.</p>
+                        <p>설치하는 도중에 보면 Complete과 Custom이 있는데 MongoDB를 처음 접한다면 Complete를 눌러 간편 설치를 한다.</p>
+                        <p>설치가 잘 되었는지 확인 해보려면</p>
+                        <p><code>C:\Program Files\MongoDB\Server\3.4\bin</code></p>
+                        <p>이 위치로 이동해본다.</p>
+                        <img src="../img/mongodb/mongodb-bin.png" vspace=10 alt="Not Found">
+                        <p id="i-2-2">이렇게 파일 목록이 보인다면 설치가 잘 된 것이다.</p><br/><br/>
+                        <h2 style="border-bottom: 1px solid rgba(0, 0, 0, 0.2); width: 600px;">2.2. 설치확인</h2>
+                        <h3 style="padding-top: 10px;">2. MongoDB 시동</h3><br/>
+                        <p>잘 실행 되는지도 cmd로 위 Path로 접근해서 mongod.exe를 실행 해본다.</p>
+                        <code>win + R</code><br/>
+                        <code>cmd 입력</code><br/>
+                        <code>>cd \</code><br/>
+                        <code>>cd Program Files</code><br/>
+                        <code>>cd MongoDB</code><br/>
+                        <code>>cd Server</code><br/>
+                        <code>>cd 3.4</code><br/>
+                        <code>>cd bin</code><br/>
+                        <code>>mongod.exe</code><br/><br/>
+                        <p>위 명령어들을 실행하면 아래와 같은 화면이 나온다.</p>
+                        <img src="../img/mongodb/mongod-exe.png" vspace=10 alt="Not Found"><br/><br/>
+                        <p>그런데 MongoDB는 DB root path를 설정해주어야 한다.</p>
+                        <p><code>"C:\data\db\"</code> 를 root directory로 설정한다.</p><br/><br/>
+                        <p>해당 위치에 폴더를 만들고 아래 명령어로 실행한다.</p>
+                        <p><code>C:\Program Files\MongoDB\Server\3.4\bin>mongod.exe --dbpath "C:\data\db"</code><p>
+                        <p>그러면 Windows 보안 경고 창이 뜨는데 액세스 허용을 누르고 진행하면 된다.</p>
+                        <p><img src="../img/mongodb/mongod-root.png" alt="Not Found"></p>
+                        <p>위와 같은 그림이 뜨면서 맨 밑줄의 <code>[thread1] waiting for connections on port #</code> 라는 메세지와 함께</p>
+                        <p>프로그램이 끝나지 않고 MongoDB 서버가 뜬다.</p><br/><br/>
+                        <p>서버가 잘 떴는지 확인해보기 위해 webbrowser로 접근해본다.</p>
+                        <p>주소는 다음과 같다.</p>
+                        <p><code>http://localhost:portnum</code></p>
+                        <p>위의 그림에서 port number는 27017 이므로</p>
+                        <p><code>http://localhost:27017</code> 로 들어가면 된다.</p>
+                        <p><img src="../img/mongodb/mongodb-localhost.png" alt="Not Found" width=85% height=650px></p>
+                        <p><code>It looks like you are trying to access MongoDB over HTTP on the native driver port.</code></p>
+                        <p>위와 같은 메세지가 나온다. 서버가 잘 떠있는 것이다.</p>
+                        <p id="chars">여기까지 아무런 문제없이 왔다면 설치 및 실행이 잘 되는 것이다.</p>
+                    </div>
+                    <div class="bottom-divider my-font">
+                        <h1 class="head-line">3. 특징<sup id="ref-3"><a href="#reference">3)</a></sup></h1>
+                        <p><h3 class="head-line">1) 문서지향 데이터베이스</h3></p>
+                        <p>&nbsp;MongoDB는 강력하고 유연하며 확장성이 높은 Document-based(문서 지향)의 데이터베이스이다. NoSQL 중에서 매우 유명하기도 하다.</p>
+                        <p>문서 지향 데이터베이스에서는 행 개념 대신에 보다 유연한 모델인 문서를 이요하는데, 내장 문서와 배열 등의 표현이 가능해서 복잡한 객</p>
+                        <p>체의 계층 관계를 하나의 레코드(열)로 표현할 수 있다. 이거은 JAVA나 PYTHON 같은 최신 객체지향 언어들을 사용하는 개발자에게 매우</p>
+                        <p id="ref-4">편리함을 가져다 준다.</p>
+                        <p><h3 class="head-line">2) 스키마가 없다.</h3></p>
+                        <p>&nbsp;먼저 스키마(schema)의 개념에 대해 설명하면, 스키마는 데이터베이스의 구조와 제약조건에 관해 전반적인 명세를 기술한 것이다. 상세</p>
+                        <p>하게 말하자면 개체의 특성을 나타내는 속성과 속성들의 집합으로 이루어진 개체, 개체 사이에 존재하는 관계에 대한 정의와 이들이 유지</p>
+                        <p>해야 할 제약조건들을 기술한 것이다.<sup><a href="#reference">4)</a></sup></p>
+                        <p>&nbsp;MongoDB의 특징 중 가장 유명한 것은 위에서 설명한 스키마가 없다는 것이다. 이것은 필요할 때마다 필드를 추가하거나 제거하는 것이</p>
+                        <p>매우 쉬워졌음을 의미한다. 따라서 개발 과정이 매우 단순해지고 빠르게 개발이 가능하게 된다.</p>
+                        <p><h3 class="head-line" id="ref-5">3) Scale-out이 가능하다.</h3></p>
+                        <p>&nbsp;'Scale Out'이란 접속된 서버의 대수를 늘려 처리 능력을 향상시키는 것이다. 서버의 가상화 기능을 사용하고 하나의 케이스 내에서 가상</p>
+                        <p>적으로 복수 서버를 구축해 스케일 아웃과 동등의 효과를 제공할 수도 있다. 이러한 방식을 특히 스케일 위드인 가상스케일아웃 이라고</p>
+                        <p>부르기도 한다. 스케일 아웃은 '수평 스케일' 이라고 불리기도 한다.<sup><a href="#reference">5)</a></sup></p>
+                        <p>&nbsp;소프트웨어 마에스트로에서 <b>뉴스 추천 서비스</b>를 프로젝트로 하고 있다. 언론사들을 크롤러가 돌며 뉴스를 수집하여 개인의 선호에 맞게</p>
+                        <p>추천하는 서비스다. 엄청난 양의 사용자 선호 로그데이터가 필요할 때마다 필드를 바꾸며 빠른 속도로 쌓여야 하는데, 이 때 매우 적합하</p>
+                        <p>다고 판정된 게 바로 MongoDB다. 데이터베이스에 엄청난 로그가 쌓여야하는데 Scale-out도 가능할 뿐더러 (디비 자체적으로 지원한다.</p>
+                        <p>이를 염두에 두고 설계되었다.알아서 문서를 재분배하고 라우팅까지 완벽히 처리한다.) 스키마가 없어 필요할 때마다 필드를 변형시킬 수</p>
+                        <p>있기 때문이다.</p>
+                        <p><h3 class="head-line">3) 범용 데이터베이스</h3></p>
+                        <p>&nbsp;MongoDB는 범용 데이터베이스 목적으로 만들어졌다. 따라서 CRUD의 작업 외에도 다양한 기능을 제공한다. NoSQL이지만 쿼리가 있다.</p>
+                        <p>아래는 몽고 디비가 제공하는 기능 중 일부이다.</p>
+                        <ul>
+                            <li style="padding-bottom: 5px;">인덱싱 제공</li>
+                            <li style="padding-bottom: 5px;">집계 파이프라인의 지원</li>
+                            <li style="padding-bottom: 5px;">특수한 컬렉션 유형 제공 (TTL 등과 고정크기 컬렉션 등)</li>
+                            <li style="padding-bottom: 5px;">파일 저장소의 지원</li>
+                        </ul>
+                        <p><h3 class="head-line" id="ref-6">4) 특별한 데이터베이스</h3></p>
+                        <p>&nbsp;이미 MongoDB가 특수한 용도로 쓰려고 예약해둔 데이터베이스들도 있다.</p>
+                        <ul>
+                            <li style="padding-bottom: 5px;">
+                                admin : Root 데이터베이스이다. 여기에 추가된 사용자는 전체 MongoDB 내의 모든 데이터베이스에 대하여 모든 권한을 획득한다.
+                                <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                서버 전역에 걸친 모든 명령어는 이곳에서만 실행 가능하다.
+                            </li>
+                            <li style="padding-bottom: 5px;">
+                                local : 이 디비는 특정 서버에만 보관하는 정보를 담는 곳이다. 복제가 불가능하다.
+                            </li>
+                            <li style="padding-bottom: 5px;">
+                                config : MongoDB는 자체로 샤딩(sharding)을 지원한다. 이 디비는 샤드 정보를 저장하는데 사용된다.<br/>
+                                &nbsp;※샤딩(sharding)은 관계형 데이터베이스에서 대량의 데이터를 처리하기 위해서 파티셔닝하는 기술이다. 샤딩은 DBMS 레벨에서<br/>
+                                데이터를 나누는 것이 아니고 데이터베이스 자체를 분할하는 방식이다. 따라서 어플리케이션 레벨에서 구현해야 한다.<sup><a href="#reference">6)</a></sup>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bottom-divider my-font" id="reference">
+                        <h2 style="width: 100%; border-bottom: 2px solid rgba(0, 0, 0, 0.3);">출처</h2>
+                        <p>
+                            <span>1)<a href="#TOP">↑</a></span>
+                            <span>
+                                <a href="https://ko.wikipedia.org/wiki/%EB%AA%BD%EA%B3%A0DB">https://ko.wikipedia.org/wiki/%EB%AA%BD%EA%B3%A0DB</a>.
+                            </span>
+                            <span>
+                                2016년 12월 06일에 확인함.
+                            </span>
+                        </p>
+                        <p>
+                            <span>2)<a href="#i-2-1">↑</a>
+                            <span>
+                                <a href="http://krksap.tistory.com/854">http://krksap.tistory.com/854</a>.
+                            </span>
+                            <span>
+                                2016년 12월 06일에 확인함.
+                            </span>
+                        </p>
+                        <p>
+                            <span>3)<a href="#chars">↑</a></span>
+                            <span>
+                                <a href="http://dev.youngkyu.kr/22">http://dev.youngkyu.kr/22</a>.
+                            </span>
+                            <span>
+                                2016년 12월 07일에 확인함.
+                            </span>
+                        </p>
+                        <p>
+                            <span>4)<a href="#ref-4">↑</a></span>
+                            <span>
+                                <a href="http://121202.tistory.com/19">http://121202.tistory.com/19</a>.
+                            </span>
+                            <span>
+                                2016년 12월 07일에 확인함.
+                            </span>
+                        </p>
+                        <p>
+                            <span>5)<a href="#ref-5">↑</a></span>
+                            <span>
+                                <a href="http://asfirstalways.tistory.com/66">http://asfirstalways.tistory.com/66</a>.
+                            </span>
+                            <span>
+                                2016년 12월 07일에 확인함.
+                            </span>
+                        </p>
+                        <p>
+                            <span>6)<a href="#ref-6">↑</a></span>
+                            <span>
+                                <a href="http://hanburn.tistory.com/106">http://hanburn.tistory.com/106</a>.
+                            </span>
+                            <span>
+                                2016년 12월 07일에 확인함.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <hr>
+
+            <!-- Footer -->
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="footer-menu-divider">&sdot;</li>
+                                <li>
+                                    <a target="_blank" href="http://www.skku.edu">SKKU</a>
+                                </li>
+                            </ul>
+                            <p class="copyright text-muted small">Copyright &copy; Introduction to Open-Source, SKKU 2016. All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.list-group-item').on('click',function(e){
+                var previous = $("*").children(".active");
+                previous.removeClass('active');
+                if ($(e.target).attr('id') != 'i'){
+                    $(e.target).addClass('active');
+                }
+            });
+            
+            $('#i').on('click',function(e){
+                $(this).find('i').toggleClass('fa-caret-down').toggleClass('fa-caret-up');
+            })
+        });
+    </script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

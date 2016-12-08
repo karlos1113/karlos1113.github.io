@@ -17,8 +17,10 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .topnav {
@@ -26,11 +28,11 @@ h6 {
 }
 
 .lead {
-  font-size: 18px;
-  font-weight: 400;
+    font-size: 18px;
+    font-weight: 400;
 }
 
-.intro-header {
+.intro-header{
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
@@ -47,6 +49,7 @@ h6 {
     background-size: cover;
 }
 
+
 .intro-message {
     position: relative;
     padding-top: 20%;
@@ -57,6 +60,7 @@ h6 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     font-size: 5em;
+	font-weight: 700;
 }
 
 .intro-divider {
@@ -68,10 +72,12 @@ h6 {
 .intro-message > h2 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     color: gray;
+	font-weight: 500;
 }
 
 .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+	font-weight: 400;
 }
 
 @media(max-width:767px) {
@@ -82,7 +88,6 @@ h6 {
     .intro-message > h1 {
         font-size: 3em;
     }
-
     ul.intro-social-buttons > li {
         display: block;
         margin-bottom: 20px;
@@ -123,7 +128,6 @@ h6 {
 .section-heading-b {
     margin-bottom: 10px;
 }
-
 
 .section-heading-spacer {
     float: left;
@@ -195,9 +199,48 @@ a.dj_special {
     font-size: 2em;
 }
 
-img.central {
-    margin-top: auto;
-    margin-bottom: auto;
+.active > .font-white {
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.left-bar {
+    margin-top: 60px;
+    position: fixed;
+    width: 15%;
+    height: 100%;
+}
+
+.top-margin {
+    margin-top: 60px;
+}
+
+.head-line {
+    width: 100%;
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+}
+
+h2.head-line, h3.head-line {
+    padding-top: 10px;
+    width: 600px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.my-font {
+    font-size: 16px;
+}
+
+.bottom-divider {
+    padding-top: 25px;
+}
+
+.sub-menu {
+    padding-left: 25px;
+}
+
+.arrow {
+    cursor: default;
 }
 
 .smaller-image {
@@ -209,8 +252,4 @@ img.central {
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 400;
     margin-bottom: 20px;
-}
-
-.korean_font{
-  font-family: 'Nanum brush script', sans-serif;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
 
 <head>
 
@@ -19,7 +19,7 @@
 
     <!-- Custom Fonts -->
     <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,11 +27,9 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
 <body>
-
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
@@ -70,37 +68,67 @@
         <!-- /.container -->
     </nav>
 
+	
 
     <!-- Header -->
     <a name="about"></a>
-    <div class="intro-header">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <h1>Introduction to Open-Source</h1>
-                        <h3>Let's study Open-Source</h3>
-                        <hr class="intro-divider">
-                        <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a target="_blank" href="https://www.facebook.com" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Concept</span></a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://www.google.com" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Google</span></a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="http://www.skku.edu" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Skku</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
+        <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+			<li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+			<li data-target="#bs-carousel" data-slide-to="1"></li>
+			<li data-target="#bs-carousel" data-slide-to="2"></li>
+			<li data-target="#bs-carousel" data-slide-to="3"></li>
+		  </ol>
+		  
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner">
+			<div class="item slides active">
+			  <div class="slide-1" ></div>
+			  <div class="hero">
+				<hgroup>
+					<h1>APACHE TOMCAT</h1>        
+					<h2>Apache Foundation Web Application Server</h3>
+				</hgroup>
+				<button class="btn btn-hero btn-lg" href="http://www.naver.com" role="button">Read More</button>
+			  </div>
+			</div>
+			<div class="item slides">
+			  <div class="slide-2"></div>
+			  <div class="hero hero-left">        
+				<hgroup class="text-left">
+					<h1>Maria DB</h1>        
+					<h2>The MariaDB Foundation</h2>
+					<h2>Opensource RDBMS</h2>
+				</hgroup>       
+				<button class="btn btn-hero btn-lg btn-left" role="button">Read More</button>
+			  </div>
+			</div>
+			<div class="item slides">
+			  <div class="slide-3"></div>
+			  <div class="hero">        
+				<hgroup class="text-right">
+					<h1>HADOOP</h1>        
+					<h2>Apache Hadoop</h2>
+					<h2>Freeware Java software framework</h2>
+				</hgroup>
+				<button class="btn btn-hero btn-lg btn-right" role="button">Read More</button>
+			  </div>
+			</div>
+			<div class="item slides">
+			  <div class="slide-4"></div>
+			  <div class="hero">        
+				<hgroup>
+					<h1>Git & Github</h1>        
+					<h2>How People build Software</h2>
+					<h2>Get start your next project</h2>
+				</hgroup>
+				<button class="btn btn-hero btn-lg" role="button">Read More</button>
+			  </div>
+			</div>
+		  </div> 
+		</div>
+        <!-- /.slider -->
     <!-- /.intro-header -->
 
     <!-- Page Content -->
