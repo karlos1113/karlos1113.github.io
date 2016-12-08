@@ -42,8 +42,8 @@ h6 {
 }
 
 .intro-header-atom {
-    padding-top: 200px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 200px;
+    padding-top: 250px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 250px;
     text-align: center;
     color: #f8f8f8;
     background-size: cover;
@@ -246,6 +246,11 @@ h2.head-line, h3.head-line {
 .smaller-image {
     width: 350px;
   }
+
+.korean_font{
+  font-family: 'Nanum gothic', sans-serf;
+  font-size: 19px;
+}
 
 .sub-title{
     font-size: 17px;
