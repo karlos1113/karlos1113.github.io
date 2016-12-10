@@ -291,3 +291,7 @@ h2.head-line, h3.head-line {
   height: 32px;
   width: 190px;
 }
+
+.fontwhite{
+  color: white;
+}
