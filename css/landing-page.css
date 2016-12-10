@@ -42,8 +42,8 @@ h6 {
 }
 
 .intro-header-atom {
-    padding-top: 250px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 250px;
+    padding-top: 350px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 650px;
     text-align: center;
     color: #f8f8f8;
     background-size: cover;
@@ -121,6 +121,10 @@ h6 {
     border-bottom: 1px solid #e7e7e7;
 }
 
+.content-section-b1{
+    padding: 150px 0;
+}
+
 .section-heading {
     margin-bottom: 30px;
 }
@@ -133,6 +137,11 @@ h6 {
     float: left;
     width: 200px;
     border-top: 3px solid #e7e7e7;
+}
+
+.section-heading-spacer-b {
+    float: left;
+    width: 200px;
 }
 
 .banner {
@@ -249,6 +258,7 @@ h2.head-line, h3.head-line {
 
 .korean_font{
   font-family: 'Nanum gothic', sans-serf;
+  text-align: justify;
   font-size: 19px;
 }
 
@@ -257,4 +267,27 @@ h2.head-line, h3.head-line {
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 400;
     margin-bottom: 20px;
+}
+
+.list-group-item {
+  position: pixed;
+  display: block;
+  padding: 10px 20px;
+  height: 50px;
+  margin-bottom: -1px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+}
+
+.floating {
+  position: fixed;
+  left: 50%;
+  top: 200px;
+  font-size: 18px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  margin-left: -900px;
+  text-align: left;
+  height: 32px;
+  width: 190px;
 }

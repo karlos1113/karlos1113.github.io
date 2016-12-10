@@ -110,7 +110,7 @@
 
     <!-- Page Content -->
 
-    <a  name="services"></a>
+    <a name="services"></a>
     <div class="content-section-a" id="Atom">
 
         <div class="container">
@@ -150,7 +150,7 @@
                     <a href="freecodecamp.html">자세히 알아보기</a>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                  <br /><br /><br /><br />
+                    <br /><br /><br /><br />
                     <img class="img-responsive" src="../img/freecodecamp.jpg" alt="">
                 </div>
             </div>
@@ -184,7 +184,7 @@
         </div>
     -->
 
-    <a  name="contact"></a>
+    <a name="contact"></a>
     <div class="banner">
 
         <div class="container">
@@ -237,10 +237,12 @@
     <!-- jQuery -->
     <script src="../js/jquery.js"></script>
     <script>
-        $(document).ready(function($){
-            $(".scroll").click(function(event){
-                event.preventDefault ();
-                $('html,body').animate ({scrollTop: $(this.hash).offset().top}, 1000);
+        $(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
             })
         })
     </script>
