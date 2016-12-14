@@ -74,13 +74,14 @@
         <!-- Left Menu -->
         <div class="col-xs-2" id="MainMenu">
             <div class="list-group left-bar" style="margin-left: 5px;">
-                <a href="#TOP" class="list-group-item active">1. 소개</a>
+                <a href="#TOP" class="list-group-item active" id="m-1">1. 소개</a>
                 <a href="#install" class="list-group-item list-group-item-action" data-toggle="collapse" id="i">2. 설치법 <i class="fa fa-caret-down"></i></a>
                 <div class="collapse" id="install">
-                    <a href="#i-2-1" class="list-group-item sub-menu">2.1. 설치</a>
-                    <a href="#i-2-2" class="list-group-item sub-menu">2.2. 설치확인</a>
+                    <a href="#i-2-1" class="list-group-item sub-menu" id="m-2-1">2.1. 설치</a>
+                    <a href="#i-2-2" class="list-group-item sub-menu" id="m-2-2">2.2. 설치확인</a>
                 </div>
-                <a href="#chars" class="list-group-item list-group-item-action">3. 특징</a>
+                <a href="#chars" class="list-group-item list-group-item-action" id="m-3">3. 특징</a>
+                <!--a href="#" class="list-group-item list-group-item-action disabled" id="m-4"></a-->
             </div>
         </div>
 
@@ -294,7 +295,38 @@
             
             $('#i').on('click',function(e){
                 $(this).find('i').toggleClass('fa-caret-down').toggleClass('fa-caret-up');
-            })
+            });
+
+            $(window).scroll(function(e){
+                var num = $(this).scrollTop ();
+                //document.getElementById('m-4').innerHTML = num;
+                if (num >= 400 && num < 4474){
+                    $('#i').find('i').removeClass('fa-caret-down');
+                    $('#i').find('i').addClass('fa-caret-up');
+                    $('#install').collapse ('show');
+                }else{
+                    $('#i').find('i').removeClass('fa-caret-up');
+                    $('#i').find('i').addClass('fa-caret-down');
+                    $('#install').collapse ('hide');
+                }
+                if (num < 400){
+                    var previous = $("*").children(".active");
+                    previous.removeClass('active');
+                    $('#m-1').addClass('active');
+                }else if (num >= 400 && num < 1750){
+                    var previous = $("*").children(".active");
+                    previous.removeClass('active');
+                    $('#m-2-1').addClass('active');
+                }else if (num >= 1750 && num < 4474){
+                    var previous = $("*").children(".active");
+                    previous.removeClass('active');
+                    $('#m-2-2').addClass('active');
+                }else if (num >= 4474){
+                    var previous = $("*").children(".active");
+                    previous.removeClass('active');
+                    $('#m-3').addClass('active');
+                }
+            });
         });
     </script>
 

@@ -77,9 +77,8 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="post-heading">
-                        <h1>Man must explore, and this is exploration at its greatest</h1>
-                        <h2 class="subheading">Problems look mighty small from 150 miles up</h2>
-                        <span class="meta">Posted by <a href="#">Start Bootstrap</a> on August 24, 2014</span>
+                        <br /><br /><br />
+                        <span class="atom-heading"><a href="#">Hadoop</a></span>
                     </div>
                 </div>
             </div>
@@ -91,40 +90,37 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
+                    <p class="korean_font">아파치 하둡(Apache Hadoop, High-Availability Distributed Object-Oriented Platform)은 대량의 자료를 처리할 수 있는 큰 컴퓨터 클러스터에서 동작하는 분산 응용 프로그램을 지원하는 프리웨어 자바 소프트웨어 프레임워크이다. 원래 너치의 분산 처리를 지원하기 위해 개발된 것으로, 아파치 루씬의 하부 프로젝트이다. 분산처리 시스템인 구글 파일 시스템을 대체할 수
+                        있는 하둡 분산 파일 시스템(HDFS: Hadoop Distributed File System)과 맵리듀스를 구현한 것이다.
+                    </p>
+                    <br />
+                    <ul>
+                    <li>
+                        <p class="korean_font">HDFS : JAVA로 개발된 순수 JAVA파일 시스템으로 페타바이트 이상의 대용량 데이터를 저장하는데 효율적이다. 시스템 확장이 용이하여 한 두개의 데이터노드 장애에도 전혀 문제없이 정상적으로 동작하여 운영중인 시스템에서의 노드의 추가/제거 또한 간단히 할 수 있다.
+                        </p>
+                    </li>
+                  </ul>
+                    <br /><br />
+                    <h2 class="section-heading">1. 역사</h2>
+                    <p class="korean_font"> 하둡은 2006년 더그 커팅과 마이크 캐퍼렐라(Mike Cafarella)가 개발하였다. 당시 커팅은 야후에서 일하고 있었으며, 이후 하둡은 아파치(Apache) 재단으로 넘어가 공개 소프트웨어로 개발되고 있다. 하둡은 구글의 분산 파일 시스템(GFS) 논문이 공개된 후, 그 구조에 대응하는 체계로 개발되었다. 하둡의 로고는 노랑색 아기 코끼리로 표시한다. 이는 하둡의 개발자인 더그 커팅이 자신의 아이가 가지고
+                        놀던 장난감 코끼리의 이름을 따서 하둡이라는 이름을 지었기 때문이다. 코끼리는 빅 데이터(Big Data)를 상징하는 동물이다. 2011년 오픈 소스 아파치 하둡(Apache Hadoop) 사업을 위해 야후에서 분사한 기업의 이름을 지을 때도, 코끼리가 주인공인 동화에 나오는 코끼리 이름인 호튼(Horton)을 따와서 호튼웍스(Hortonworks)라고 회사명을 지었다.
+                    </p>
 
-                    <p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
+                    <br /><br />
+                    <h2 class="section-heading">2. 빅 데이터에 적합한 이유</h2>
 
-                    <p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
 
-                    <p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
+                    <p class="korean_font"> 대용량 파일을 저장할 수 있는 분산 파일 시스템을 제공. 클러스터 구성은 통해 멀티 노드로 부하를 분산시켜 처리. 장비를 증가 시킬수록 성능이 Linear 가깝게 향상 오픈소스, Intel core 머신과 리눅스는 저렴
 
-                    <p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
+                    </p>
+                    <br /><br />
+                    <h2 class="section-heading">3. 단점</h2>
 
-                    <h2 class="section-heading">The Final Frontier</h2>
+                    <p class="korean_font"> 스트리밍 작업 같은 실시간성 데이터분석이나, reduce task의 입력 데이터가 큰 작업에는 효율이 저하됨. 오픈소스이기 때문에 설명이나 운영지원이 어렵다.
 
-                    <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
 
-                    <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+                    </p>
 
-                    <blockquote>The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
-
-                    <p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
-
-                    <h2 class="section-heading">Reaching for the Stars</h2>
-
-                    <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
-
-                    <a href="#">
-                        <img class="img-responsive" src="img/post-sample-image.jpg" alt="">
-                    </a>
-                    <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
-
-                    <p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
-
-                    <p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
-
-                    <p>Placeholder text by <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>.</p>
                 </div>
             </div>
         </div>

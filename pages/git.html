@@ -72,14 +72,12 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/post-bg.jpg')">
+    <header class="intro-header">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="post-heading">
-                        <h1>Man must explore, and this is exploration at its greatest</h1>
-                        <h2 class="subheading">Problems look mighty small from 150 miles up</h2>
-                        <span class="meta">Posted by <a href="#">Start Bootstrap</a> on August 24, 2014</span>
+                        <h1>Git - 리눅스 환경에서의 소스 관리 프로그램</h1>
                     </div>
                 </div>
             </div>
@@ -87,44 +85,46 @@
     </header>
 
     <!-- Post Content -->
-    <article>
+    <article style="font-size: 1.3em">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
 
-                    <p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
+                    <h2>Git 설치</h2><br>
+                    <p>Redhat 계열</p>
+                    <code>$ yum install git</code><br><br>
+                    <p>Debian 계열</p>
+                    <code>$ apt-get install git</code><br><br><br>
 
-                    <p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
+                    <h2>Git 초기 설정</h2><br>
+                    <p>이름 설정</p>
+                    <code>$ git config --global user.name "name"</code><br><br>
+                    <p>이메일 설정</p>
+                    <code>$ git config --global user.email "email@email.com"</code><br><br><br>
 
-                    <p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
+                    <h2>Git 기본 사용</h2><br>
+                    <p>새로운 프로젝트 폴더 생성 뒤 초기화</p>
+                    <code>$ mkdir PROJECT</code><br>
+                    <code>$ cd PROJECT</code><br>
+                    <code>$ git init</code><br><br>
+                    <p>Local Repository에 적용할 새로운 파일이나 수정된 파일을 추가</p>
+                    <code>$ git add FILENAME</code><br><br>
+                    <p>Local Repository에 적용</p>
+                    <code>$ git commit -m "explaination"</code><br><br><br>
 
-                    <p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
+                    <h2>Git 더 나아가기</h2><br>
+                    <p>Local Repository 복사해오기</p>
+                    <code>$ git clone ~/PATH/PROJECT</code><br><br>
+                    <p>Remote Repository 복사해오기</p>
+                    <code>$ git clone Remote_Repository_주소</code><br><br>
+                    <p>Remote Repository와 연결하기(git clone을 하지 않은 경우)</p>
+                    <code>$ git remote add origin Remote_Repository_주소</code><br><br>
+                    <p>Remote Repository에 소스 저장하기</p>
+                    <code>$ git push Local_Repository_Branch Remote_Repository_Branch</code><br><br>
 
-                    <h2 class="section-heading">The Final Frontier</h2>
-
-                    <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
-
-                    <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
-
-                    <blockquote>The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
-
-                    <p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
-
-                    <h2 class="section-heading">Reaching for the Stars</h2>
-
-                    <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
-
-                    <a href="#">
-                        <img class="img-responsive" src="img/post-sample-image.jpg" alt="">
-                    </a>
-                    <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
-
-                    <p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
-
-                    <p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
-
-                    <p>Placeholder text by <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>.</p>
+                    <h2>Git에 대해 더 자세히 알아보는곳</h2>
+                    <a href="https://git-scm.com/book/en/v2">Git-scm</a>
+                    
                 </div>
             </div>
         </div>

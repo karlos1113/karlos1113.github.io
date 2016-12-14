@@ -31,7 +31,6 @@
 </head>
 
 <body>
-
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
@@ -74,21 +73,21 @@
     <!-- Left Menu -->
         <div class="col-xs-2" id="MainMenu">
             <div class="list-group left-bar" style="margin-left: 5px;">
-                <a href="#TOP" class="list-group-item active">1. 소개</a>
-                <a href="#introduction" class="list-group-item list-group-item-action">2. 개요</a>
-                <a href="#install" class="list-group-item list-group-item-action">3. 설치</a>
+                <a href="#TOP" class="list-group-item active" id="m-1">1. 소개</a>
+                <a href="#introduction" class="list-group-item list-group-item-action" id="m-2">2. 개요</a>
+                <a href="#install" class="list-group-item list-group-item-action" id="m-3">3. 설치</a>
                 <a href="#chrome" class="list-group-item list-group-item-action" data-toggle="collapse" id="i">4. 특징 <i class="fa fa-caret-down"></i></a>
                 <div class="collapse" id="chrome">
-                    <a href="#c-4-1" class="list-group-item sub-menu">4.1. 기능</a>
-                    <a href="#c-4-2" class="list-group-item sub-menu">4.2. About 주소명령체계</a>
+                    <a href="#c-4-1" class="list-group-item sub-menu" id="m-4-1">4.1. 기능</a>
+                    <a href="#c-4-2" class="list-group-item sub-menu" id="m-4-2">4.2. About 주소명령체계</a>
                     <a class="list-group-item sub-menu" disabled id="nothing1">4.3. 장단점</a>
-                    <a href="#c-4-3-1" class="list-group-item" style="padding-left: 30px;">4.3.1 장점</a>
-                    <a href="#c-4-3-2" class="list-group-item" style="padding-left: 30px;">4.3.2 단점</a>
+                    <a href="#c-4-3-1" class="list-group-item" style="padding-left: 30px;" id="m-4-3-1">4.3.1 장점</a>
+                    <a href="#c-4-3-2" class="list-group-item" style="padding-left: 30px;" id="m-4-3-2">4.3.2 단점</a>
                 </div>
-                <a href="#hidden-func" class="list-group-item list-group-tiem-action" data-toggle="collapse" id="nothing2">5. 숨겨진 기능 <i class="fa fa-caret-down"></i></a>
+                <a href="#hidden-func" class="list-group-item list-group-item-action" data-toggle="collapse" id="nothing2">5. 숨겨진 기능 <i class="fa fa-caret-down"></i></a>
                 <div class="collapse" id="hidden-func">
-                    <a href="#c-5-1" class="list-group-item sub-menu">5.1. 공룡게임</a>
-                    <a href="#c-5-2" class="list-group-item sub-menu">5.2. 탭 음소거</a>
+                    <a href="#c-5-1" class="list-group-item sub-menu" id="m-5-1">5.1. 공룡게임</a>
+                    <a href="#c-5-2" class="list-group-item sub-menu" id="m-5-2">5.2. 탭 음소거</a>
                 </div>
             </div>
         </div>
@@ -388,7 +387,70 @@
 
             $('#nothing2').on('click', function(e){
                 $(this).find('i').toggleClass('fa-caret-down').toggleClass('fa-caret-up');
-            })
+            });
+
+            $(window).scroll(function(e){
+                var num = $(this).scrollTop ();
+                if (num >= 2000 && num < 5350){
+                    $('#i').find('i').removeClass('fa-caret-down');
+                    $('#i').find('i').addClass('fa-caret-up');
+                    $('#nothing2').find('i').removeClass('fa-caret-up');
+                    $('#nothing2').find('i').addClass('fa-caret-down');
+                    $('#chrome').collapse ('show');
+                    $('#hidden-func').collapse ('hide');
+                }else if (num >= 5350){
+                    $('#i').find('i').removeClass('fa-caret-up');
+                    $('#i').find('i').addClass('fa-caret-down');
+                    $('#nothing2').find('i').removeClass('fa-caret-down');
+                    $('#nothing2').find('i').addClass('fa-caret-up');
+                    $('#chrome').collapse ('hide');
+                    $('#hidden-func').collapse ('show');
+                }else{
+                    $('#i').find('i').removeClass('fa-caret-up');
+                    $('#i').find('i').addClass('fa-caret-down');
+                    $('#nothing2').find('i').removeClass('fa-caret-up');
+                    $('#nothing2').find('i').addClass('fa-caret-down');
+                    $('#chrome').collapse ('hide');
+                    $('#hidden-func').collapse ('hide');
+                }
+                if (num < 650){
+                    var previous = $("*").children(".active");
+                    previous.removeClass('active');
+                    $('#m-1').addClass('active');
+                }else if (num >= 650 && num < 1100){
+                    var previous = $("*").children(".active");
+                    previous.removeClass('active');
+                    $('#m-2').addClass('active');
+                }else if (num >= 1100 && num < 2000){
+                    var previous = $("*").children(".active");
+                    previous.removeClass('active');
+                    $('#m-3').addClass('active');
+                }else if (num >= 2000 && num < 2550){
+                    var previous = $("*").children(".active");
+                    previous.removeClass('active');
+                    $('#m-4-1').addClass('active');
+                }else if (num >= 2550 && num < 3200){
+                    var previous = $("*").children(".active");
+                    previous.removeClass('active');
+                    $('#m-4-2').addClass('active');
+                }else if (num >= 3200 && num < 4700){
+                    var previous = $("*").children(".active");
+                    previous.removeClass('active');
+                    $('#m-4-3-1').addClass('active');
+                }else if (num >= 4700 && num < 5350){
+                    var previous = $("*").children(".active");
+                    previous.removeClass('active');
+                    $('#m-4-3-2').addClass('active');
+                }else if (num >= 5350 && num < 7050){
+                    var previous = $("*").children(".active");
+                    previous.removeClass('active');
+                    $('#m-5-1').addClass('active');
+                }else if (num >= 7050){
+                    var previous = $("*").children(".active");
+                    previous.removeClass('active');
+                    $('#m-5-2').addClass('active');
+                }
+            });
         });
     </script>
 

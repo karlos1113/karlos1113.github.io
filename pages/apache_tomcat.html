@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Introduction to Open-Source Page</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../css/landing-page.css" rel="stylesheet">
+	<link href="../css/material-kit.css" rel="stylesheet"/>
+    <!-- Custom Fonts -->
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">	
+	<link href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="landing-page">
+    <!-- Navigation -->
+    <nav class="navbar navbar-warning navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="index.html">Home</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="foundation.html">Open-Source Foundation</a>
+                    </li>
+                    <li>
+                        <a href="project.html">Open-Source Project</a>
+                    </li>
+                    <li>
+                        <a href="license.html">License</a>
+                    </li>
+                    <li>
+                        <a href="github.html">Git/Github</a>
+                    </li>
+                    <li>
+                        <a href="github_project.html">Github project</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+	<div class="list-group left-bar navbar-fixed-top" style="margin-left: 20px; margin-top:30%;">
+		<a href="#top" class="list-group-item scroll">Top</a>
+		<a href="#introduction" class="list-group-item scroll">Introduction</a>
+		<a href="#information" class="list-group-item scroll">Information</a>
+		<a href="#howtouse" class="list-group-item scroll">How to use</a>
+		<a href="#example" class="list-group-item scroll">Eclipse 연동</a>
+	</div>
+    <!-- Page Header -->
+    <!-- Post Content -->
+	<div class="wrapper yellowbg">
+		<!-- 인트로 -->
+		<div id="top" class="header header-filter" style="background-image: url('../img/slide/s8.jpg');">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+					  <h1 class="title">The Apache Tomcat® software provides a "pure Java" HTTP web server environment in which Java code can run.</h1>
+					  </br>
+					  <h4>Apache Software Foundation의</h4>
+					  <h4>자바 환경 기반 웹 어플리케이션 서버(WAS).</h4>
+					  </br>
+						<a href="#introduction" class="btn btn-warning btn-raised btn-lg scroll">
+							<i class="fa fa-play"></i> Watch video : Introduction of Apache Tomcat®
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 인트로 -->
+		<!-- 본문 -->
+		<!-- 사이드 숏컷 -->
+				
+		
+		<!-- 사이드 숏컷 -->
+		<div id="introduction" class="main main-raised">	
+			<div class="container">
+				<div class="section text-center section-landing">				
+					<h2>Introduction</h2>
+					</br>
+					<iframe width="800" height="480" src="https://www.youtube.com/embed/kkQOm02kep0" frameborder="0" allowfullscreen></iframe>						
+					<h4>아파치 톰캣은 아파치 소프트웨어 재단에서 개발된 웹 애플리케이션 서버입니다.</h4>
+					<h4>웹서버와 연동하여 실행할 수 있는 자바 환경을 제공하여 자바 서버 페이지와 자바 서블릿이 실행할 수 있는 환경을 제공합니다.</h4>
+					
+					<div class="features">
+						<div class="row">
+		                    <div class="col-md-6">
+								<div class="info">
+									<div class="icon icon-warning">
+										<i class="material-icons">attach_money</i>
+									</div>
+									<h4 class="info-title">무료</h4>
+									<p>아파치 톰캣은 무료로 사용가능합니다. 사용자에게 서버 구축 비용 절감의 이점이 있습니다.</p>
+								</div>
+		                    </div>
+		                    <div class="col-md-6">
+								<div class="info">
+									<div class="icon icon-success">
+										<i class="material-icons">group</i>
+									</div>
+									<h4 class="info-title">오픈소스</h4>
+									<p>아파치 톰캣 프로젝트는 오픈소스로 지속적인 업데이트와 개선이 이루어지고 있습니다. 전세계에서 활발한 활동이 이루어지고 있습니다.</p>
+								</div>
+		                    </div>
+						</div>
+					</div>
+					<div class="features">
+						<div class="row">
+		                    <div class="col-md-6">
+								<div class="info">
+									<div class="icon icon-primary">
+										<i class="material-icons">build</i>
+									</div>
+									<h4 class="info-title">튜닝</h4>
+									<p>아파치 톰캣은 xml, TomcatLib 설정, JVM Tuning을 통해 서버의 업무 시나리오에 맞춰 튜닝이 가능합니다.</p>
+								</div>
+		                    </div>
+		                    <div class="col-md-6">
+								<div class="info">
+									<div class="icon icon-warning">
+										<i class="material-icons">extension</i>
+									</div>
+									<h4 class="info-title">모듈</h4>
+									<p>다양한 모듈들을 통해 기능과 성능을 더욱 강화 할 수 있습니다.</p>
+								</div>
+		                    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Introduction-->
+		
+		<div id="information" class="main main-raised" style="margin-top: 50px">	
+			<div class="container text-center">
+				<div class="section section-landing">
+					<h2>Information</h2>
+				</div>
+				<h3>Version Information</h3>
+				<div class="col-md-12">
+					<div class="col-md-3 col-sm-4 col-md-offset-1 text-left">
+						<h3>Initial release</h3>
+						<h4>1999,</h4>
+						<h4>17 years ago</h4>
+					</div>
+					<div class="col-md-3 col-sm-4 col-md-offset-1 text-left">
+						<h3>Stable release</h3>
+						<h4 class="warning">8.5.9 version</h4>
+						<h4>December 8, 2016</h4>
+					</div>
+					<div class="col-md-3 col-sm-4 col-md-offset-1 text-left">
+						<h3>Preview release</h3>
+						<h4 class="warning">9.0.0 version</h4>
+						<h4>November 7, 2016</h4>
+					</div>
+				</div>
+				<div class="section section-landing">
+					<h2>.</h2>
+				</div>
+				<h3>License Information</h3>
+				<div class="col-md-12">
+					<div class="col-md-2">
+					</div>
+					<div class="col-md-8 text-center">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Apache_Software_Foundation_Logo_%282016%29.svg/250px-Apache_Software_Foundation_Logo_%282016%29.svg.png">
+						<h3>Apache License 2.0</h3>
+						<h4>아파치 톰캣의 라이센스는 Apache License, version 2를 따릅니다.</h4>
+						<a href="https://www.apache.org/licenses/">
+							<button class="btn btn-warning" data-toggle="modal" data-target="">
+								<i class="material-icons">search</i>자세히 알아보기
+								<div class="ripple-container"></div>
+							</button>
+						</a>
+					</div>
+					<div class="col-md-2">
+					</div>
+				</div>
+				<div class="section section-landing">
+					<h2>.</h2>
+				</div>
+				<h3>More Information</h3>
+				<div class="col-md-12">
+					<div class="col-md-4 col-sm-12 text-center">
+						<img class="col-md-12 col-sm-6"src="http://errorlogz.com/wp-content/uploads/2014/10/logo-apache-tomcat.jpg">
+						<h3>Apache+Tomcat?</h3>
+						<h4>Apache는 재단명입니다. 아파치 서버라는 것은 이 재단 후원으로 만들어지는 http Web Server를 지칭하는 말입니다.</h4>
+						<h4>Tomcat은 WAS(Web Application Server)입니다. 웹서버와 웹 컨테이너의 결합으로 다양한 기능을 컨테이너에 구현하여 역할 수행을 하는 서버를 말합니다.</h4>
+						<a href="http://tomcat.apache.org/">
+							<button class="btn btn-warning" data-toggle="modal" data-target="">
+								<i class="material-icons">search</i>tomcat.apache.org/
+								<div class="ripple-container"></div>
+							</button>
+						</a>
+					</div>
+					<div class="col-md-4 text-center">
+						<img class="col-md-12 col-sm-6"src="https://jitpack.io/w/img/github-logo.png">
+						<h3>With github?</h3>
+						<h4>Github에서 아파치 톰캣 프로젝트의 미러를 제공하고 있습니다.</h4>
+						<a href="https://github.com/apache/tomcat">
+							<button class="btn btn-warning" data-toggle="modal" data-target="">
+								<i class="material-icons">search</i>Github.com/apache/tomcat
+								<div class="ripple-container"></div>
+							</button>
+						</a>
+						<h4>실 SVN 저장소는 apache 재단 관리 하에서 운영되고 있습니다.</h4>
+						<a href="http://tomcat.apache.org/svn.html">
+							<button class="btn btn-warning" data-toggle="modal" data-target="">
+								<i class="material-icons">search</i>tomcat.apache.org/svn
+								<div class="ripple-container"></div>
+							</button>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-12 text-center">
+						<img class="col-md-12 col-sm-6"src="http://techbakbak.com/wp-content/uploads/2016/03/Oracle-low-suit-Google-Java-android.png">
+						<h3>Writing Language?</h3>
+						<h4>아파치 톰캣은 Java로 작성되었습니다.</h4>
+					</div>
+					<div class="col-md-4">
+					</div>
+				</div>
+				<div class="section section-landing">
+					<h2>.</h2>
+				</div>
+			</div>
+		</div>
+		<!-- 개요 -->
+		
+		<div id="howtouse" class="main main-raised" style="margin-top: 50px">	
+			<div class="container">
+				<div class="section text-center section-landing">
+					<h2>How To Use</h2>
+				</div>
+				<div class="section text-center section-landing">
+					<h3>시작하기 앞서 아래의 내용이 갖추어져야 진행 가능합니다.</h3>
+					<h4>자바 JDK(Java Development Kit) 설치</h4>
+					<h4>JAVA_HOME 환경 변수 설정</h4>
+					<h4>Java 개발 환경 구축</h4>
+					<h4>위 사항에 대한 내용은 아래 링크에 설명되어 있습니다.</h4>
+					<a href="http://withcoding.com/24">
+						<button class="btn btn-warning" data-toggle="modal" data-target="">
+							<i class="material-icons">search</i>withcoding.com/24
+							<div class="ripple-container"></div>
+						</button>
+					</a>
+				</div>
+				
+				<div class="col-md-12">
+					<h3 class="text-center">In Windows</h3>
+					<div class="section text-left section-landing col-md-5 col-md-offset-1">
+						<h3>1. DOWNLOAD</h3>
+						<h4>아래의 링크에서 운영체제에 맞게 최신버전을 다운로드해 주세요.</h4>
+						<a href="http://tomcat.apache.org/download-90.cgi">
+							<button class="btn btn-warning" data-toggle="modal" data-target="">
+								<i class="material-icons">file_download</i>Apache Tomcat 9.0
+								<div class="ripple-container"></div>
+							</button>
+						</a>
+						<a href="http://tomcat.apache.org/tomcat-9.0-doc/index.html">
+							<button class="btn btn-warning" data-toggle="modal" data-target="">
+								<i class="material-icons">link</i>  버전 정보
+								<div class="ripple-container"></div>
+							</button>
+						</a>
+						</br>
+					</div>
+					<div class="section text-left section-landing col-md-5 col-md-offset-1">
+						<h3>2. Uncompression</h3>
+						<h4>다운로드 받은 파일의 압축을 루트드라이브 최상위 폴더에 풀어주세요.</h4>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="section text-left section-landing col-md-5 col-md-offset-1">
+						<h3>3. Startup.bat</h3>
+						<h4>폴더 내 ./Bin/Startup.bat 파일을 실행시킵니다.</h4>
+						<h4>동일 폴더 내 배치파일 startup.bat, shutdown.bat, catalina.bat를 통해 톰캣 실행, 종료, 재시작을 할 수 있습니다.</h4>
+						<h4>catalina.bat 파일은 start, stop, run, version 옵션이 있습니다.</h4>
+					</div>
+					<div class="section text-left section-landing col-md-5 col-md-offset-1">
+						<h3>4. 실행 확인</h3>
+						<img class="col-md-12" src="http://www.siongboon.com/projects/2009-06-28%20Java%20and%20Eclipse/3_java_flex_webservice/tomcat%20homepage.png">
+						<h4>브라우저를 실행 후 localhost:8080 또는 127.0.0.1:8080으로 접속해 실행 화면을 확인해 볼 수 있습니다.</h4>
+						<h4>위와 동일한 모습의 페이지가 보일시 설치가 완료된것입니다.</h4>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<h3 class="text-center">In Linux</h3>
+					<h5 class="text-center"> 출처: http://zero-gravity.tistory.com/269</h5>
+					<div class="section text-left section-landing col-md-5 col-md-offset-1">
+						<h3>1. DOWNLOAD</h3>
+						<h4>아래의 링크에서 운영체제에 맞게 최신버전을 다운로드해 주세요.</h4>
+						<a href="http://tomcat.apache.org/download-90.cgi">
+							<button class="btn btn-warning" data-toggle="modal" data-target="">
+								<i class="material-icons">file_download</i>Apache Tomcat 9.0
+								<div class="ripple-container"></div>
+							</button>
+						</a>
+						<a href="http://tomcat.apache.org/tomcat-9.0-doc/index.html">
+							<button class="btn btn-warning" data-toggle="modal" data-target="">
+								<i class="material-icons">link</i>  버전 정보
+								<div class="ripple-container"></div>
+							</button>
+						</a>
+						</br>
+					</div>
+					<div class="section text-left section-landing col-md-5 col-md-offset-1">
+						<h3>2. Uncompression</h3>
+						<h4>#tar -zxf/usr/local/apache-tomcat-9.0.0.M15.tar.gz</h4>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="section text-left section-landing col-md-5 col-md-offset-1">
+						<h3>3. Jsvc 빌드(option)</h3>
+						<h4># cd /usr/local/apache-tomcat-9.0.0.M15/bin</h4>
+						<h4># tar xvfz commons-daemon-native.tar.gz</h4>
+						<h4># cd commons-daemon-*-native-src/unix</h4>
+						<h4># ./configure --with-java=/usr/java/latest</h4>
+					</div>
+					<div class="section text-left section-landing col-md-5 col-md-offset-1">
+						<h3>4. Account permission</h3>
+						<h4># chown userid: /usr/local/apache-tomcat-9.0.0.M15</h4>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="section text-left section-landing col-md-5 col-md-offset-1">
+						<h3>5. Port setting(80으로 변경함)</h3>
+						<h4># vi /usr/local/apache-tomcat-9.0.0.M15/conf/server.xml</h4>
+					</div>
+					<div class="section text-left section-landing col-md-5 col-md-offset-1">
+						<h3>6. Firewall setting</h3>
+						<h4># firewall-cmd --permanent --zone=public --add-port=80/tcp</h4>
+						<h4># firewall-cmd --reload</h4>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="section text-left section-landing col-md-5 col-md-offset-1">
+						<h3>7. Tomcat start/stop</h3>
+						<h4># /usr/local/apache-tomcat-9.0.0.M15/bin/startup.sh   (시작)</h4>
+						<h4># /usr/local/apache-tomcat-9.0.0.M15/bin/shutdown.sh  (정지)</h4>
+					</div>
+					<div class="section text-left section-landing col-md-5 col-md-offset-1">
+						<h3>8. 실행 확인</h3>
+						<img class="col-md-12" src="http://www.siongboon.com/projects/2009-06-28%20Java%20and%20Eclipse/3_java_flex_webservice/tomcat%20homepage.png">
+						<h4>브라우저를 실행 후 localhost:8080 또는 127.0.0.1:8080으로 접속해 실행 화면을 확인해 볼 수 있습니다.</h4>
+						<h4>위와 동일한 모습의 페이지가 보일시 설치가 완료된것입니다.</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- How to start -->
+		
+		<div id="example" class="main main-raised" style="margin-top: 50px">	
+			<div class="container">
+				<div class="section text-center section-landing">
+					<h2>Tomcat & Eclipse 연동</h2>
+					</br>
+				<div class="col-md-12">
+					<h5 calss="text-center"> 출처: chmodi.tistory.com/52</h5>
+					<div class="section text-left section-landing col-md-5 col-md-offset-1">
+						<h3>1. 새 Workspace 생성</h3>
+						<h4>새 Workspace를 생성합니다.</h4>
+					</div>
+					<div class="section text-left section-landing col-md-5 col-md-offset-1">
+						<h3>2. Tomcat server 선택</h3>
+						<h4>Window -> Preferences -> 좌측 메뉴 -> Server -> Runtime Environment</h4>
+						<h4>Add 클릭 후 Apache Tomcat v9.0 선택</h4>
+						<h4>Tomcat Server가 설치된 폴더를 지정하고 Finish를 선택합니다.</h4>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="section text-left section-landing col-md-5 col-md-offset-1">
+						<h3>3. 서버 추가</h3>
+						<h4>소스 편집 화면에서 하단에 Servers를 클릭하면 새 서버를 만들라는 문장이 나타납니다.</h4>
+						<h4>링크를 클릭한 후 나타나는 새 서버를 추가창에서 내용 확인 후 Finish 클릭.</h4>
+					</div>
+					<div class="section text-left section-landing col-md-5 col-md-offset-1">
+						<h3>4. 확인 및 start/stop</h3>
+						<h4>좌측 Project Explorer를 보면 TOmcat Server가 추가된 것을 볼 수 있습니다.</h4>
+						<h4>서버 구동은 하단의 Servers -> Tomcat Server 우 클릭 -> Start / Stop을 클릭하면 됩니다.</h4>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<!-- How to start -->
+	</div>
+	<!-- 본문 -->
+	
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a target="_blank" href="http://www.skku.edu">SKKU</a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted small">Copyright &copy; Introduction to Open-Source, SKKU 2016. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+	<script>
+        $(document).ready(function($){
+            $(".scroll").click(function(event){
+                event.preventDefault ();
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
+            })
+        })
+	</script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

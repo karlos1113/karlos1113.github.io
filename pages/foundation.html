@@ -73,42 +73,56 @@
 
     <!-- Header -->
     <a name="about"></a>
-    <div class="intro-header">
-        <div class="container">
+    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#bs-carousel" data-slide-to="1"></li>
+        </ol>
 
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <h1>Open-Source Foundation</h1>
-                        <h3>Let's study Open-Source</h3>
-                        <hr class="intro-divider">
-                        <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a target="_blank" href="https://www.facebook.com" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Facebook</span></a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://www.google.com" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Google</span></a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="http://www.skku.edu" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Skku</span></a>
-                            </li>
-                        </ul>
-                        <a href="#Linux" class="dj_special scroll">Linux</a>
-                        <br/>
-                        <a href="#Apache" class="dj_special scroll">Apache</a>
-                    </div>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+
+            <div class="item slides active">
+                <div class="slide-1">
+                    <center><img class="img-responsive intro-header-fc" src="../img/slide/linux slide.jpg" alt=" "></center>
+                </div>
+                <div class="hero">
+                    <hgroup class="text-left">
+                        <h1>Linux</h1>
+                    </hgroup>
+                    <button class="btn btn-hero btn-lg btn-left" role="button"><a href="#Linux" class="fontwhite scroll">Read More</a></button>
                 </div>
             </div>
-
+            <div class="item slides">
+                <div class="slide-2">
+                    <center><img class="img-responsive intro-header-fc" src="../img/slide/apacheslidef.jpg" alt=" "></center>
+                </div>
+                <div class="hero">
+                    <hgroup class="text-right">
+                        <h1>apache</h1>
+                    </hgroup>
+                    <button class="btn btn-hero btn-lg btn-right" role="button"><a href="#Apache" class="fontwhite scroll">Read More</a></button>
+                </div>
+            </div>
         </div>
-        <!-- /.container -->
-
+        <a class="left carousel-control" href="#bs-carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#bs-carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
+    <!-- /.slider -->
     <!-- /.intro-header -->
+
+
 
     <!-- Page Content -->
 
-	<a  name="services"></a>
+    <a name="services"></a>
     <div class="content-section-a" id="Linux">
 
         <div class="container">
@@ -117,7 +131,7 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Linux<br/>Foundation</h2>
-                    <p class="lead">A special thanks to <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a> for providing the photographs that you see in this template. Visit their website to become a member.</p>
+                    <p class="lead">리눅스 재단(Linux Foundation, LF)은 리눅스의 발전을 제고하기 위해 설립된 비영리 연합체이다. 2007년에 OSDL(오픈 소스 개발 랩)과 FSG(자유 표준 그룹)의 병합으로 설립된 리눅스 재단은 리눅스 제작자 리누스 투르발스의 일을 지원하고 있으며, 전 세계의 선도하는 리눅스 및 오픈 소스 기업과 개발자로부터 지원을 받고 있다.</p>
                     <br /><br />
                     <a href="linux_foundation.html">자세히 알아보기</a>
                 </div>
@@ -141,11 +155,13 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Apache<br/>Foundation</h2>
-                    <p class="lead">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by <a target="_blank" href="http://www.psdcovers.com/">PSDCovers</a>! Visit their website to download some of their awesome, free photoshop actions!</p>
+                    <p class="lead">아파치 소프트웨어 재단(Apache Software Foundation, ASF)은 아파치 HTTP 서버를 포함한 아파치 소프트웨어 프로젝트를 지원하는 비영리 재단이다. 1999년 6월 아파치 그룹과 미 델라웨어사와 합쳐 이루어졌다.
+                    </p>
                     <br /><br />
                     <a href="apache_foundation.html">자세히 알아보기</a>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <br /><br /><br /><br />
                     <img class="img-responsive" src="../img/apache.png" alt="">
                 </div>
             </div>
@@ -178,7 +194,7 @@
 
         </div>
     -->
-	<a  name="contact"></a>
+    <a name="contact"></a>
     <div class="banner">
 
         <div class="container">
@@ -231,12 +247,14 @@
     <!-- jQuery -->
     <script src="../js/jquery.js"></script>
     <script>
-    $(document).ready(function() {
-        $(".scroll").click(function(event) {
-            event.preventDefault();
-            $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        $(document).ready(function() {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            })
         })
-    })
     </script>
 
     <!-- Bootstrap Core JavaScript -->

@@ -4,23 +4,16 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
-body,
-html {
+body, html {
     width: 100%;
     height: 100%;
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+body, h1, h2, h3, h4, h5, h6 {
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 400;
-	margin-top: 5px;
-	margin-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .topnav {
@@ -30,10 +23,12 @@ h6 {
 .lead {
     font-size: 18px;
     font-weight: 400;
+    text-align: justify;
 }
 
-.intro-header{
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+.intro-header {
+    padding-top: 50px;
+    /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
@@ -42,13 +37,16 @@ h6 {
 }
 
 .intro-header-atom {
-    padding-top: 350px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 650px;
-    text-align: center;
-    color: #f8f8f8;
+    padding-top: 500px;
+    /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 500px;
+    background: no-repeat center center;
     background-size: cover;
 }
 
+.intro-header-fc {
+    width: 100%;
+}
 
 .intro-message {
     position: relative;
@@ -56,48 +54,45 @@ h6 {
     padding-bottom: 20%;
 }
 
-.intro-message > h1 {
+.intro-message>h1 {
     margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     font-size: 5em;
-	font-weight: 700;
+    font-weight: 700;
 }
 
 .intro-divider {
     width: 600px;
     border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.intro-message > h2 {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+.intro-message>h2 {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     color: gray;
-	font-weight: 500;
+    font-weight: 500;
 }
 
-.intro-message > h3 {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-	font-weight: 400;
+.intro-message>h3 {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    font-weight: 400;
 }
 
 @media(max-width:767px) {
     .intro-message {
         padding-bottom: 15%;
     }
-
-    .intro-message > h1 {
+    .intro-message>h1 {
         font-size: 3em;
     }
-    ul.intro-social-buttons > li {
+    ul.intro-social-buttons>li {
         display: block;
         margin-bottom: 20px;
         padding: 0;
     }
-
-    ul.intro-social-buttons > li:last-child {
+    ul.intro-social-buttons>li:last-child {
         margin-bottom: 0;
     }
-
     .intro-divider {
         width: 100%;
     }
@@ -121,8 +116,8 @@ h6 {
     border-bottom: 1px solid #e7e7e7;
 }
 
-.content-section-b1{
-    padding: 150px 0;
+.content-section-b1 {
+    padding: 100px 0;
 }
 
 .section-heading {
@@ -133,6 +128,11 @@ h6 {
     margin-bottom: 10px;
 }
 
+.section-heading-c {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
 .section-heading-spacer {
     float: left;
     width: 200px;
@@ -141,7 +141,7 @@ h6 {
 
 .section-heading-spacer-b {
     float: left;
-    width: 200px;
+    width: 100px;
 }
 
 .banner {
@@ -153,7 +153,7 @@ h6 {
 
 .banner h2 {
     margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     font-size: 3em;
 }
 
@@ -176,17 +176,15 @@ h6 {
 @media(max-width:767px) {
     .banner h2 {
         margin: 0;
-        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
         font-size: 3em;
     }
-
-    ul.banner-social-buttons > li {
+    ul.banner-social-buttons>li {
         display: block;
         margin-bottom: 20px;
         padding: 0;
     }
-
-    ul.banner-social-buttons > li:last-child {
+    ul.banner-social-buttons>li:last-child {
         margin-bottom: 0;
     }
 }
@@ -200,18 +198,20 @@ p.copyright {
     margin: 15px 0 0;
 }
 
+
 /* Additional Class for me */
+
 a.dj_special {
     text-decoration: underline;
     color: white;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     font-size: 2em;
 }
 
-.active > .font-white {
+.active>.font-white {
     color: white;
     font-size: 1.5em;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .left-bar {
@@ -227,7 +227,7 @@ a.dj_special {
 
 .head-line {
     width: 100%;
-    border-bottom: 2px solid rgba(0,0,0,0.3);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 h2.head-line, h3.head-line {
@@ -254,44 +254,80 @@ h2.head-line, h3.head-line {
 
 .smaller-image {
     width: 350px;
-  }
-
-.korean_font{
-  font-family: 'Nanum gothic', sans-serf;
-  text-align: justify;
-  font-size: 19px;
 }
 
-.sub-title{
+.korean_font {
+    font-family: 'Noto Sans KR', sans-serf;
+    text-align: justify;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.sub-title {
     font-size: 17px;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 400;
     margin-bottom: 20px;
 }
 
-.list-group-item {
-  position: pixed;
-  display: block;
-  padding: 10px 20px;
-  height: 50px;
-  margin-bottom: -1px;
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
-}
-
 .floating {
-  position: fixed;
-  left: 50%;
-  top: 200px;
-  font-size: 18px;
-  font-family: 'Noto Sans KR', sans-serif;
-  font-weight: 400;
-  margin-left: -900px;
-  text-align: left;
-  height: 32px;
-  width: 190px;
+    position: fixed;
+    left: 50%;
+    top: 200px;
+    font-size: 17px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    margin-left: -750px;
+    text-align: left;
+    width: 170px;
 }
 
-.fontwhite{
-  color: white;
+.fontwhite {
+    color: white;
+}
+
+.atom-heading {
+    font-size: 25px;
+}
+
+.fc-heading {
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 25px;
+}
+
+.fc-contents {
+    text-align: left;
+    font-size: 20px;
+}
+
+.space-bottom {
+    margin-bottom: 15px;
+}
+
+.space-left {
+    margin-left: 70px;
+}
+
+.font-black {
+    color: black;
+}
+
+.pad-top{
+  padding-top: 330px;
+}
+
+.pad-left{
+  padding-left: 50px;
+}
+
+.atom-back-menu{
+  background-color: #D6D6C2;
+  font-weight: bold;
+}
+
+.fc-back-menu{
+  background-color: #ADD076;
+  font-weight: bold;
 }

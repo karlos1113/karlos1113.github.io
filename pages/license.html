@@ -73,42 +73,68 @@
 
     <!-- Header -->
     <a name="about"></a>
-    <div class="intro-header">
-        <div class="container">
+    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#bs-carousel" data-slide-to="1"></li>
+            <li data-target="#bs-carousel" data-slide-to="2"></li>
+        </ol>
 
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <h1>License</h1>
-                        <h3>Let's study Open-Source</h3>
-                        <hr class="intro-divider">
-                        <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a target="_blank" href="https://www.facebook.com" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Facebook</span></a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://www.google.com" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Google</span></a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="http://www.skku.edu" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Skku</span></a>
-                            </li>
-                        </ul>
-                        <a href="#MIT" class="dj_special scroll">MIT License</a><br/>
-                        <a href="#Apache" class="dj_special scroll">Apache License</a><br/>
-                        <a href="#GPL" class="dj_special scroll">GPL License</a>
-                    </div>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+
+            <div class="item slides active">
+                <div class="slide-1">
+                    <center><img class="img-responsive intro-header-fc" src="../img/slide/mitslide.png" alt=" "></center>
+                </div>
+                <div class="hero">
+                    <hgroup class="text-right">
+                        <h1 class="font-black">MIT License</h1>
+                    </hgroup>
+                    <button class="btn btn-hero btn-lg btn-right" role="button"><a href="#MIT" class="fontwhite scroll">Read More</a></button>
                 </div>
             </div>
-
+            <div class="item slides">
+                <div class="slide-2">
+                    <center><img class="img-responsive intro-header-fc" src="../img/slide/apacheslide.jpg" alt=" "></center>
+                </div>
+                <div class="hero">
+                    <hgroup>
+                        <h1 class="font-black">Apache License</h1>
+                    </hgroup>
+                    <button class="btn btn-hero btn-lg" role="button"><a href="#Apache" class="fontwhite scroll">Read More</a></button>
+                </div>
+            </div>
+            <div class="item slides">
+                <div class="slide-7">
+                    <center><img class="img-responsive intro-header-fc" src="../img/slide/gplslide.jpg" alt=" "></center>
+                </div>
+                <div class="hero">
+                    <hgroup>
+                        <h1>GPL License</h1>
+                    </hgroup>
+                    <button class="btn btn-hero btn-lg" role="button"><a href="#GPL" class="fontwhite scroll">Read More</a></button>
+                </div>
+            </div>
         </div>
-        <!-- /.container -->
-
+        <a class="left carousel-control" href="#bs-carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#bs-carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
+    <!-- /.slider -->
     <!-- /.intro-header -->
+
+
 
     <!-- Page Content -->
 
-    <a  name="services"></a>
+    <a name="services"></a>
     <div class="content-section-a" id="MIT">
 
         <div class="container">
@@ -117,12 +143,12 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">MIT<br/>License</h2>
-                    <p class="lead">A special thanks to <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a> for providing the photographs that you see in this template. Visit their website to become a member.</p>
+                    <p class="lead">MIT 허가서(영어: MIT License, MIT 라이선스)는 매사추세츠 공과대학교(MIT)을 기원으로 하는 소프트웨어 라이선스 중 가장 대표적인 것이다. X11 License 또는 X License로 표기되기도 한다.</p>
                     <br /><br />
                     <a href="mit_license.html">자세히 알아보기</a>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="../img/mit_license.png" alt="">
+                    <img class="img-responsive" src="../img/mit_license.jpg" alt="">
                 </div>
             </div>
 
@@ -140,8 +166,8 @@
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Apache</br>License</h2>
-                    <p class="lead">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by <a target="_blank" href="http://www.psdcovers.com/">PSDCovers</a>! Visit their website to download some of their awesome, free photoshop actions!</p>
+                    <h2 class="section-heading">Apache License</h2>
+                    <p class="lead">Apache 재단에서 만든 라이선스입니다. Apache Project에서 사용중이며 사용자의 GPL License보다 자유로운 정책을 채택하고 있습니다.</p>
                     <br /><br />
                     <a href="apache_license.html">자세히 알아보기</a>
                 </div>
@@ -165,7 +191,7 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">GPL<br/>License</h2>
-                    <p class="lead">This template features the 'Lato' font, part of the <a target="_blank" href="http://www.google.com/fonts">Google Web Font library</a>, as well as <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.</p>
+                    <p class="lead">GNU 재단에서 만든 라이선스입니다. Linux Project에서 사용중이며 모든 소스 코드는 공개되어야 하는 철학을 담고 있습니다.</p>
                     <br /><br />
                     <a href="gpl_license.html">자세히 알아보기</a>
                 </div>
@@ -180,7 +206,7 @@
     </div>
     <!-- /.content-section-a -->
 
-    <a  name="contact"></a>
+    <a name="contact"></a>
     <div class="banner">
 
         <div class="container">
@@ -233,10 +259,12 @@
     <!-- jQuery -->
     <script src="../js/jquery.js"></script>
     <script>
-        $(document).ready(function($){
-            $(".scroll").click(function(event){
-                event.preventDefault ();
-                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
+        $(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
             })
         })
     </script>

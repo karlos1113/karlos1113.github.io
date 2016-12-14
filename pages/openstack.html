@@ -77,9 +77,8 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="post-heading">
-                        <h1>Man must explore, and this is exploration at its greatest</h1>
-                        <h2 class="subheading">Problems look mighty small from 150 miles up</h2>
-                        <span class="meta">Posted by <a href="#">Start Bootstrap</a> on August 24, 2014</span>
+                        <br /><br /><br />
+                        <span class="atom-heading"><a href="#">Openstack</a></span>
                     </div>
                 </div>
             </div>
@@ -91,40 +90,42 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
+                    <p class="korean_font">오픈스택(OpenStack)은 IaaS 형태의 클라우드 컴퓨팅 오픈 소스 프로젝트이다. 2012년 창설된 비영리 단체인 OpenStack Foundation에서 유지, 보수하고 있으며 아파치 라이선스하에 배포된다. AMD, 인텔, 캐노니컬, 수세 리눅스, 레드햇, 시스코 시스템즈, 델, HP, IBM, NEC, VM 웨어, 야후 등 150개 이상의 회사가 이 프로젝트에 참가하고 이쓰며, 주로 리눅스 기반으로 운용과
+                        개발이 이루어진다. 프로세싱, 저장공간, 네트워킹의 가용자원을 제어하는 목적의 여러개의 하위 프로젝트로 이루어져 있다. 대시 보드 프로젝트는 다른 하위 프로젝트의 운영 제어를 웹 인터페이스를 통해 담당한다. 오픈스택은 열린 설계와 개발을 지향한다. 커뮤니티는 6개월의 릴리즈 사이클 로 개발을 진행하고 있다. 매 사이클의 기획단계에서는 OpenStack Design Summit을 개최하여, 개발자 작업을
+                        지원하고, 로드맵을 설정하고 있다.</p>
+                    <br /><br />
+                    <h2 class="section-heading">1. 역사</h2>
+                    <p class="korean_font">2010년 7월 Rackspace사와 미국 항공우주국이 오픈스택(OpenStack) 오픈 소스 프로젝트를 시작하였다. 오픈스택은 일반적인 서버에서 클라우드 컴퓨팅 서비스를 생성하고 실행할 수 있도록 해준다. 첫 번째 릴리즈 (코드명 Austin)는 프로젝트 시작 4개월 이후에 공식 릴리즈 되었고, 이후 공식 버전은 6개월 마다 릴리즈된다. 처음에는 미국 항공우주국의 Nebula 플랫폼과 Rackspace의 클라우드
+                        파일 플랫폼의 소스를 기반으로 하였다. 오픈스택은 우분투와 레드햇 배포판에 포함되었다.
+                    </p>
 
-                    <p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
+                    <br /><br />
+                    <h2 class="section-heading">2. 기본 서비스</h2>
 
-                    <p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
+                    <p class="korean_font">1. Nova(Compute) : Iaas(infrastructure as a Service) 구축에 필요한 compute instance 들을 제어 및 관리하기 위한 서비스로 All share 기능을 담당하는 프로젝트. 2. Glance(Image) : 가상 머신 이미지들을 저장, 등록, 관리, 전달하기 위한 이미지 서비스이며 Nova와 storage간 중계 역할을 담당함. 3. Swift(Object Storage)
+                        : Block Storage가 아닌 Object storage환경을 구축 및 관리하기 위한 서비스로 별도의 독립적인 구축이 가능한 스토리지 서비스 프로젝트.
+                    </p>
+                    <br /><br />
+                    <h2 class="section-heading">3. 부가 서비스</h2>
 
-                    <p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
+                    <p class="korean_font">1. Keystone(Identity) : 모든 서비스의 Identity를 증명하는 역할을 함. 2. Quantum(Network) : 인터페이스의 디바이스와 오픈스택 서비스간의 네트워킹 서비스를 지원하는 프로젝트. 3. Cinder(Block Storage) : Compute응 위해 스토리지 볼륨을 제공하는 역할을 함. 4. Horizon(Dashboard) : 오픈스택 기반 구현 서비스들을 관리자나 사용자가
+                        제어하기 위한 웹 인터페이스를 제공함.
+                    </p>
+                    <br /><br />
+                    <h2 class="section-heading">4. 장점</h2>
 
-                    <p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
+                    <p class="korean_font">확정성과 모듈성 : 가상화 컴퓨팅 기술, 개인 데이터 저장 기술, 서로 다른 소프트웨어끼리 통신할 수 있는 소프트웨어 정의 네트워크(SDN) 등을 제공한다. 기업은 굳이 오픈스택이 제공하는 모든 기능을 사용하지 않아도 된다.
 
-                    <h2 class="section-heading">The Final Frontier</h2>
+                    </p>
 
-                    <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+                    <br /><br />
+                    <h2 class="section-heading">5. 단점</h2>
 
-                    <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+                    <p class="korean_font">너무 잦은 업데이트 : 업데이트 주기가 빨라 개발자들이 충분한 테스트 과정을 거치지 못하기 때문.
 
-                    <blockquote>The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
 
-                    <p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
+                    </p>
 
-                    <h2 class="section-heading">Reaching for the Stars</h2>
-
-                    <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
-
-                    <a href="#">
-                        <img class="img-responsive" src="img/post-sample-image.jpg" alt="">
-                    </a>
-                    <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
-
-                    <p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
-
-                    <p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
-
-                    <p>Placeholder text by <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>.</p>
                 </div>
             </div>
         </div>
